@@ -88,4 +88,13 @@ def chain_get():
     }
     return jsonify(response), 200
 
+@app.route('/if_valid', methods = ['GET'])                          #Checks if the chain is valid, basically just calls the chain_valid function from class blockchain
+def if_valid():
+    valid = bchain.chain_valid(bchain.chain)
+    if(valid):
+        response = {'msg:': "Blockchain is valid!"}
+    else:
+        response = {'msg:': "Blockchain is not valid!"}
+    return jsonify(reponse), 200
+
 app.run(host = '0.0.0.0', port = 5000)                              #Runs the app publicly on your server
