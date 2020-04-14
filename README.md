@@ -1,3 +1,3 @@
 # Blockchain_Cryptocurrency
-Blockchain and cryptocurrency (named RanCoin) implementation in python.
-This is a simple implementation which does not hash user data (eg. private key) and only defines the genral architecture of Blockchains and the CryptoCurrency protocol. The server is built over Flask through which the http calls (req, post) are made.
+Blockchain and cryptocurrency implementation in python.
+This is a simple implementation which only defines the genral architecture of Blockchains and the CryptoCurrency protocol and uses Proof of Work. The server is built over Flask through which the http calls are made. This project is a good starting point for anyone to understand the underlying idea behind blockchain.
